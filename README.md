@@ -3,7 +3,7 @@
     - https://xdd.wisc.edu/api: Statistics and search across entire xDD corpus (equivalent to deprecated https://geodeepdive.org/api)
         - Full-text search and retrieval of text snippets: https://xdd.wisc.edu/api/snippets; automatic surfacing of mentioned drugs and grounded EMMAA statements available with option `&known_entities=drugs,emmaa`
         - Can filter by set with `&set=xdd-covid-19`
-        - Example to scroll (25 per page) through all documents within the `xdd-covid-19` set with mentioned drug and statements: https://xdd.wisc.edu/api/articles?set=xdd-covid-19&full_results=true&known_entities=emmaa,drugs&per_page=25
+        - Example to scroll (25 per page) through all documents within the `xdd-covid-19` set with surfaced drug mentions and EMMAA statements: https://xdd.wisc.edu/api/articles?set=xdd-covid-19&full_results=true&known_entities=emmaa,drugs&per_page=25
     - https://xdd.wisc.edu/sets/: xDD document sets defined by full text searches and journal titles. Different transformations to documents within sets are available within sub-pages of the set. For example, documents within a set may be used to train a word embedding model, or the COSMOS extraction pipeline may be deployed to extract figures, tables, and equations for documents within a set
         - https://xdd.wisc.edu/sets/xdd-covid-19/: Lists information about the `xdd-covid-19` set of documents, and lists available products (transformations) derived from the set.
 2. **COSMOS API**: Figure, table, equation retreival by [COSMOS document processing pipeline](https://github.com/UW-COSMOS/Cosmos) deployed over xDD set. Note that use of these routes to retrieve table and figure objects requires an API key.
